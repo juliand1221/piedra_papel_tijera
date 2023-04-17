@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego piedra Papel o Tijera</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <header class="header">
+        
+        <h1 class="title">Bienvenido al Juego de Piedra, Papel o Tijera</h1>
+        <img class="logo" alt="logo" src="juego.png" />
+        
+    </header>
+
+    <div class="contenedor">
+
+        <form id="miFormulario" class="formulario" >
+            <input class="input" id="nombre" type="text" placeholder="&#128100;  Ingresa Tu Nombre " required autofocus/>
+            <input class="input" id="juego" type="text" placeholder="🪨 🧻 ✂️ Escoge Piedra, Papel o Tijera" required autofocus/>
+            <button type="submit" class="button">Enviar</button>
+        </form>
+
+        <div class="bienvenida">
+            <p id="resultado-nombre"></p>
+        </div>
+        <br>
+        <div class="jugador">
+            <p id="resultado-juego"></p>
+            <img src=""  id="graf" class="graf"/>
+        </div>
+        <div class="pc">
+            <p id="juego-pc"></p>
+            <img src=""  id="graf-pc" class="graf"/>
+        </div>
+        <br>
+        <div class="batalla">
+            <p id="resultado"></p>
+        </div>
+
+    </div>
+
+   
+    <script src="funcion.js"></script>
+</body>
+</html>

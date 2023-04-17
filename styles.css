@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: century;
+    vertical-align: baseline;
+}
+.header{
+    text-align: center;
+    color: #fff;
+    background: #2E9AFE;
+    padding: 2%;
+    /* border: 5px solid red; */
+}
+.logo{
+    width: 20vh;
+    padding: 1%;
+}
+.contenedor{
+    padding-top: 2%;
+}
+.formulario{
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.formulario input {
+    width: 90%;
+    height: 30px;
+    margin: 0.5rem;
+}
+.bienvenida {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+    
+    
+}
+.graf {
+    width: 40vh;
+    margin-top: 5vh;
+}
+.jugador{
+    width: 50%;
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    float: left;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.pc {
+    width: 50%;
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    float: right;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.batalla{
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
