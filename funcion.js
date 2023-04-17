@@ -22,13 +22,13 @@ formulario.addEventListener('submit', function(event) {
 
     // /////JUGADOR-GRAFICO//////
     if(juego == "piedra"){
-        document.getElementById("graf").src = "./piedra.png";
+        document.getElementById("graf").src = "../Pierdra-papel-tijera/images/piedra.png";
     }
     else if (juego == "papel"){
-        document.getElementById("graf").src = "./papel.png"; 
+        document.getElementById("graf").src = "../Pierdra-papel-tijera/images/papel.png"; 
     }
     else if (juego == "tijera"){
-        document.getElementById("graf").src = "./tijera.png"; 
+        document.getElementById("graf").src = "../Pierdra-papel-tijera/images/tijera.png"; 
     }else {
         alert('error');
         formulario.reset();
@@ -37,15 +37,15 @@ formulario.addEventListener('submit', function(event) {
     /////PC-GRAFICO/////////
     if(pc== 1 ){
         pc = "piedra";
-        document.getElementById("graf-pc").src = "./piedra.png";
+        document.getElementById("graf-pc").src = "../Pierdra-papel-tijera/images/piedra.png";
     }
     else if(pc == 2){
         pc = "papel";
-        document.getElementById("graf-pc").src = "./papel.png";
+        document.getElementById("graf-pc").src = "../Pierdra-papel-tijera/images/papel.png";
     }
     else if(pc == 3) {
         pc = "tijera";
-        document.getElementById("graf-pc").src = "./tijera.png";
+        document.getElementById("graf-pc").src = "../Pierdra-papel-tijera/images/tijera.png";
     }
 
     /////BATALLA//////
