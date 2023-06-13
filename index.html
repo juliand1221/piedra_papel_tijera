@@ -12,34 +12,77 @@
     <header class="header">
         
         <h1 class="title">Bienvenido al Juego de Piedra, Papel o Tijera</h1>
-        <img class="logo" alt="logo" src="../Pierdra-papel-tijera/images/juego.png" />
+        <img class="logo" alt="logo" src="/images/juego.png" />
         
     </header>
 
-    <div class="contenedor">
+    <div class="contenedor" id="contenedor">
 
-        <form id="miFormulario" class="formulario" >
-            <input class="input" id="nombre" type="text" placeholder="&#128100;  Ingresa Tu Nombre " required autofocus/>
-            <input class="input" id="juego" type="text" placeholder="🪨 🧻 ✂️ Escoge Piedra, Papel o Tijera" required autofocus/>
-            <button type="submit" class="button">Enviar</button>
-        </form>
+        <section id="resultado" class="resultado">
+            
+            <div class="cont-resultado">
+                
+                <div>
+                    <div class="begin">
+                        <p class="user">USUARIO</p>
+                    </div>
+                    <div id="resultadoUno" class="resultadoUno">
+                        <p id="resultado-nombre"></p>
+                        <div class="imgJugador"  >
+                            <img id="imgJugador" src="/images/interrogacion.png" alt="">
+                        </div>
+                        <div class="vida-jugador" >
+                            <img id="vidJugador" src="/images/corazon3.png" alt="">
+                        </div>
+                        
+                    </div>
+                </div>
 
-        <div class="bienvenida">
-            <p id="resultado-nombre"></p>
-        </div>
-        <br>
-        <div class="jugador">
-            <p id="resultado-juego"></p>
-            <img src=""  id="graf" class="graf"/>
-        </div>
-        <div class="pc">
-            <p id="juego-pc"></p>
-            <img src=""  id="graf-pc" class="graf"/>
-        </div>
-        <br>
-        <div class="batalla">
-            <p id="resultado"></p>
-        </div>
+                <div>
+                    <div class="begin">
+                        <p class="maquina">PC</p>
+                    </div>
+                    <div id="resultadoDos" class="resultadoDos">
+                        <p id="resultadoPc"></p>
+                        <div class="imgJugador">
+                            <img id="imgEnemigo" src="/images/interrogacion.png" alt="">
+                        </div>
+                        <div class="vida-enemigo" >
+                            <img id="vidEnemigo" src="/images/corazon3.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="escoger">
+
+            <div id="miFormulario" class="formulario" >
+                <input type="radio" id="roca" name="juego">
+                <label for="roca" class="tarjeta">
+                    <img src="/images/mole.png" alt="">
+                    <h4 class="H4">PIEDRA</h4>
+                </label>
+
+                <input type="radio" id="papel" name="juego">
+                <label for="papel" class="tarjeta">
+                    <img src="/images/papel.png" alt="">
+                    <h4 class="H4">PAPEL</h4>
+                </label>
+
+                <input type="radio" id="tijera" name="juego">
+                <label for="tijera" class="tarjeta">
+                    <img src="/images/Tijera.png" alt="">
+                    <h4 class="H4">TIJERA</h4>
+                </label>
+            </div>
+
+            <div class="botonJugar" id="boton-juego">
+                <button id="boton-juego">Enviar</button>
+            </div>
+            
+        </section>
 
     </div>
 

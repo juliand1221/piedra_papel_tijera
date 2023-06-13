@@ -1,4 +1,5 @@
-*{
+html, body{
+    height: 100vh;
     margin: 0;
     padding: 0;
     border: 0;
@@ -10,31 +11,155 @@
     text-align: center;
     color: #fff;
     background: #2E9AFE;
-    padding: 2%;
+    padding: 2px;
     /* border: 5px solid red; */
 }
 .logo{
-    width: 20vh;
-    padding: 1%;
+    width: 15vh;
+    padding: 5px;
 }
 .contenedor{
-    padding-top: 2%;
+    height: 100vh;
+    background: purple;
+    padding: 10px;
 }
-.formulario{
-    width: 100%;
-    max-width: 600px;
-    margin: 0 auto;
+.begin{
+    position: relative;
+    height: 50px;
+}
+.user{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.maquina{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.resultado{
     display: flex;
-    flex-direction: column;
+    flex-flow: column wrap;
+    border: 2px solid red;
+    background: green;
+    margin: 10px;
+}
+.cont-resultado{
+    display: flex;
+    flex-flow: column wrap;
+    gap: 20px;
     justify-content: center;
-    align-items: center;
+    flex-direction: row;
     
 }
-.formulario input {
-    width: 90%;
-    height: 30px;
-    margin: 0.5rem;
+.cont-resultado img{
+    width: 215px;
+    height: 230px;
 }
+.vida-jugador, .vida-enemigo{
+    padding: 10px;
+}
+.resultadoUno{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    border: 2px solid red;
+    background: orange;
+    margin: 15px;
+    padding: 10px;
+    height: 320px;
+    width: 250px;
+}
+.vida-jugador img{
+    width: 170px;
+    height: 60px;
+}
+.resultadoDos{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    border: 2px solid red;
+    background: orange;
+    padding: 10px;
+    margin: 15px;
+    height: 320px;
+    width: 250px;
+}
+.vida-enemigo img{
+    width: 170px;
+    height: 60px;
+}
+
+
+
+
+
+
+.formulario{
+    display: flex;
+    gap: 30px;
+    flex-flow: row wrap;
+    justify-content: center;   
+}
+.tarjeta{
+    position: relative;
+    width: 250px;
+    height: 270px;
+    background: red;
+    padding: 10px;
+    box-sizing: border-box;
+    align-items: center;
+
+    overflow: hidden;
+    cursor: pointer;
+}
+.formulario img{
+    width: 215px;
+    height: 230px;
+    transition: all 500ms ease-out;
+}
+.H4{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    backdrop-filter: blur(1rem);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    font-size: 1.8em;
+    font-family: var(--tipo-titular);
+    font-style: italic;
+    opacity: 0;
+    transform: translateZ(1) scale(1.2);
+    transition: all .5s ease;
+}
+.H4:hover{
+    opacity: 1;
+    transform: scale(1);
+}
+input[type='radio']{
+    display: none;
+}
+.formulario input[type="radio"]:checked + label {
+    background: blue;
+
+}
+.botonJugar{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+
 .bienvenida {
     width: 100%;
     max-width: 600px;
