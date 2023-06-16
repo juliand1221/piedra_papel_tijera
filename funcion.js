@@ -147,7 +147,7 @@ function revisarVidasJugador(){
         barravidaJugador.src = '/images/corazon1.png'
     }else if(vidasJugador == 0){
         cartaUno.style.display = 'none'
-        resultadoFinal = 'Lastimosamente Perdiste'
+        resultadoFinal = 'Haz Perdido'
         mensajeFinal();
         // alert('Perdiste todooo')
     }
