@@ -1,16 +1,20 @@
-html, body{
-    height: 100vh;
+*{
     margin: 0;
     padding: 0;
-    border: 0;
-    box-sizing: border-box;
     font-family: century;
-    vertical-align: baseline;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+body{
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    width: 100%;    
 }
 .header{
     text-align: center;
     color: #fff;
-    background: #2E9AFE;
+    background: #000000;
     padding: 2px;
     /* border: 5px solid red; */
 }
@@ -19,13 +23,14 @@ html, body{
     padding: 5px;
 }
 .contenedor{
-    height: 100vh;
-    background: purple;
+    background: #FFFFFF;
     padding: 10px;
+    flex-grow: 1;
 }
 .begin{
     position: relative;
-    height: 50px;
+    height: 30px;
+    margin: 0px;
 }
 .user{
     position: absolute;
@@ -40,21 +45,26 @@ html, body{
 .resultado{
     display: flex;
     flex-flow: column wrap;
-    border: 2px solid red;
-    background: green;
+    background: #FFFFFF;
     margin: 10px;
+}
+#resultado-nombre{
+    margin: 5%;
+}
+#resultadoPc{
+    margin: 5%;
 }
 .cont-resultado{
     display: flex;
     flex-flow: column wrap;
-    gap: 20px;
+    gap: 30px;
     justify-content: center;
     flex-direction: row;
     
 }
 .cont-resultado img{
-    width: 215px;
-    height: 230px;
+    width: 200px;
+    height: 215px;
 }
 .vida-jugador, .vida-enemigo{
     padding: 10px;
@@ -64,11 +74,10 @@ html, body{
     flex-flow: row wrap;
     justify-content: center;
     align-content: center;
-    border: 2px solid red;
-    background: orange;
+    background: #FFFFFF;
     margin: 15px;
     padding: 10px;
-    height: 320px;
+    height: 300px;
     width: 250px;
 }
 .vida-jugador img{
@@ -80,44 +89,56 @@ html, body{
     flex-flow: row wrap;
     justify-content: center;
     align-content: center;
-    border: 2px solid red;
-    background: orange;
+    background: #FFFFFF;
     padding: 10px;
     margin: 15px;
-    height: 320px;
+    height: 300px;
     width: 250px;
 }
 .vida-enemigo img{
     width: 170px;
     height: 60px;
 }
-
-
-
-
-
-
+.cartaMedio{
+    
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+}
+.vs{
+    display: flex;
+    flex-flow: wrap;
+    border: 2px solid black;
+    width: 140px;
+    height: 100px;
+    background: #BDBDBD;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20%;
+    text-align: center;
+}
 .formulario{
     display: flex;
-    gap: 30px;
+    gap: 80px;
     flex-flow: row wrap;
     justify-content: center;   
 }
 .tarjeta{
     position: relative;
-    width: 250px;
-    height: 270px;
-    background: red;
+    width: 150px;
+    height: 170px;
+    background: #BDBDBD;
     padding: 10px;
     box-sizing: border-box;
     align-items: center;
-
+    border: 2px solid black;
+    border-radius: 40%;
     overflow: hidden;
     cursor: pointer;
 }
 .formulario img{
-    width: 215px;
-    height: 230px;
+    width: 100px;
+    height: 120px;
     transition: all 500ms ease-out;
 }
 .H4{
@@ -146,20 +167,6 @@ html, body{
     opacity: 1;
     transform: scale(1);
 }
-input[type='radio']{
-    display: none;
-}
-.formulario input[type="radio"]:checked + label {
-    background: blue;
-
-}
-.botonJugar{
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-}
-
-
 .bienvenida {
     width: 100%;
     max-width: 600px;
@@ -206,4 +213,50 @@ input[type='radio']{
     justify-content: center;
     align-items: center;
     
+}
+footer{
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    padding: 1rem 5%;
+    background: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.social-icons-container, .footer-menu-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+.social-icon{
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    border: 1px solid #f2f2f2;
+    background-image: url(/images/linkedin1.png);
+    background-position: center;
+    background-size: 60%;
+    background-repeat: no-repeat;
+    margin: 1rem;
+}
+.social-icon:hover{
+    background-color: #121212;
+    filter: invert(1);
+}
+.social-icon:nth-of-type(2){
+    background-image: url(/images/github.png);
+}
+.social-icon:nth-of-type(3){
+    background-image: url(/images/twitter.png);
+}
+
+.copyright{
+    color: #f2f2f2;
+    opacity: 0.3;
+    text-align: center;
 }

@@ -12,7 +12,7 @@
     <header class="header">
         
         <h1 class="title">Bienvenido al Juego de Piedra, Papel o Tijera</h1>
-        <img class="logo" alt="logo" src="/images/juego.png" />
+        <img class="logo" alt="logo" src="/images/logo1.png" />
         
     </header>
 
@@ -22,7 +22,7 @@
             
             <div class="cont-resultado">
                 
-                <div>
+                <div id="cartaUno">
                     <div class="begin">
                         <p class="user">USUARIO</p>
                     </div>
@@ -38,7 +38,17 @@
                     </div>
                 </div>
 
-                <div>
+                <div class="cartaMedio">
+                    <div class="vs">
+                        <p id="mensajeResultado">VS</p>
+                        <p id="mensajeFinal"></p>
+                        <button id="botonReinicio">
+                            Voler a intentar
+                        </button>
+                    </div>
+                </div>
+
+                <div id="cartaDos">
                     <div class="begin">
                         <p class="maquina">PC</p>
                     </div>
@@ -59,32 +69,35 @@
         <section id="escoger">
 
             <div id="miFormulario" class="formulario" >
-                <input type="radio" id="roca" name="juego">
-                <label for="roca" class="tarjeta">
+                <button id="roca" class="tarjeta">
                     <img src="/images/mole.png" alt="">
                     <h4 class="H4">PIEDRA</h4>
-                </label>
-
-                <input type="radio" id="papel" name="juego">
-                <label for="papel" class="tarjeta">
+                </button>
+                
+                <button id="papel" class="tarjeta">
                     <img src="/images/papel.png" alt="">
                     <h4 class="H4">PAPEL</h4>
-                </label>
+                </button>
 
-                <input type="radio" id="tijera" name="juego">
-                <label for="tijera" class="tarjeta">
+                <button id="tijera" class="tarjeta">
                     <img src="/images/Tijera.png" alt="">
                     <h4 class="H4">TIJERA</h4>
-                </label>
-            </div>
-
-            <div class="botonJugar" id="boton-juego">
-                <button id="boton-juego">Enviar</button>
+                </button>
             </div>
             
         </section>
 
+
     </div>
+    <footer>
+        <!-- <img src="/images/logo1.png" alt="" class="logofooter"> -->
+        <div class="social-icons-container">
+            <a href="https://www.linkedin.com/in/juliand1221/" target="_blank" class="social-icon"></a>
+            <a href="https://github.com/juliand1221" target="_blank" class="social-icon"></a>
+            <a href="https://twitter.com/juliantenorio" target="_blank" class="social-icon"></a>
+        </div>
+        <span class="copyright">&copy;2023, Julian David Tenorio. All rights reserved.</span>
+    </footer>
 
    
     <script src="funcion.js"></script>
