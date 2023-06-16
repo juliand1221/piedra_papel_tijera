@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: century;
+    font-family:cursive;
     box-sizing: border-box;
     transition: 0.5s;
 }
@@ -16,7 +16,6 @@ body{
     color: #fff;
     background: #000000;
     padding: 2px;
-    /* border: 5px solid red; */
 }
 .logo{
     width: 15vh;
@@ -34,11 +33,15 @@ body{
 }
 .user{
     position: absolute;
+    font-size: 20px;
+    font-weight: 800;
     top: 0;
     left: 0;
 }
 .maquina{
     position: absolute;
+    font-size: 20px;
+    font-weight: 800;
     top: 0;
     right: 0;
 }
@@ -49,10 +52,10 @@ body{
     margin: 10px;
 }
 #resultado-nombre{
-    margin: 5%;
+    margin: 10%;
 }
 #resultadoPc{
-    margin: 5%;
+    margin: 10%;
 }
 .cont-resultado{
     display: flex;
@@ -116,6 +119,9 @@ body{
     align-items: center;
     border-radius: 20%;
     text-align: center;
+}
+#botonReinicio{
+    
 }
 .formulario{
     display: flex;
@@ -237,7 +243,7 @@ footer{
     height: 50px;
     width: 50px;
     border-radius: 50px;
-    border: 1px solid #f2f2f2;
+    border: 2px solid #f2f2f2;
     background-image: url(/images/linkedin1.png);
     background-position: center;
     background-size: 60%;
