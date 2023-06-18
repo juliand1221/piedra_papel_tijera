@@ -283,3 +283,14 @@ footer{
     opacity: 0.3;
     text-align: center;
 }
+@media (max-width: 800px){
+    .cont-resultado{
+        display: flex;
+        flex-flow: column wrap;
+        gap: 30px;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        
+    }
+}
